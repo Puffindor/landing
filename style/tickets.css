@@ -1,0 +1,453 @@
+.tickets {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.tickets__card {
+ width: 90%;
+ background-color: #3d3d3d;
+ border-radius: 30px;
+ margin-top: 150px;
+ padding: 150px 280px;
+}
+
+.tickets__list {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.tickets__list__item {
+ z-index: 3;
+ position: relative;
+ display: grid;
+ grid-template-columns: 80% 30%;
+ width: 100%;
+ padding: 50px 240px 60px 30px;
+ border-radius: 10px;
+}
+
+.tickets__list__item.vip {
+ transition: 200ms;
+ background-color: #c1a14f;
+}
+
+.tickets__list__item.vip:hover {
+ transition: 200ms;
+ background-color: #a57d19;
+}
+
+.tickets__list__item.vip:active {
+ transition: 200ms;
+ background-color: #f5d583;
+}
+
+.tickets__list__item__text__p1 {
+ text-indent: 20%;
+ font-family: Graphik;
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 20px;
+ letter-spacing: -0.04em;
+ text-align: left;
+}
+.tickets__list__item__text__p1.vip {
+ color: #232323;
+}
+
+.tickets__list__item__text p span {
+ font-family: Graphik;
+ font-size: 16px;
+ font-weight: 700;
+ line-height: 20px;
+ letter-spacing: -0.04em;
+ text-align: left;
+ color: #232323;
+}
+
+.tickets__list__item a {
+ margin-top: 82px;
+ font-family: Coolvetica;
+ font-size: 48px;
+ font-weight: 900;
+ line-height: 48px;
+ text-align: left;
+ color: #232323;
+ text-transform: uppercase;
+ vertical-align: baseline;
+ display: block;
+ cursor: pointer;
+ text-decoration: none;
+}
+
+.tickets__list__item h3 {
+ font-family: Coolvetica;
+ font-size: 110px;
+ font-weight: 400;
+ line-height: 92px;
+ letter-spacing: -0.02em;
+ text-align: left;
+
+ color: #232323;
+}
+
+.border {
+ height: 0;
+ width: 97%;
+ border: 2px dashed white;
+}
+
+.tickets__list__vip__dec {
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.tickets__list__vip__code {
+ position: absolute;
+ bottom: 69px;
+ right: 0;
+}
+
+.tickets__list__item.speaker-partner {
+ background-color: #304d57;
+ z-index: 2;
+ transition: 200ms;
+}
+
+.tickets__list__item.speaker-partner:hover {
+ transition: 200ms;
+ background-color: #373e41;
+}
+
+.tickets__list__item.speaker-partner:active {
+ transition: 200ms;
+ background-color: #498398;
+}
+
+.tickets__list__item__text__p1.speaker-partner {
+ color: #fefefe;
+}
+
+.tickets__list__item.speaker-partner h3 {
+ color: #ff6d3a;
+}
+
+.tickets__list__item__text__p1.speaker-partner span {
+ color: #fefefe;
+}
+
+.tickets__list__item__text.speaker-partner a {
+ color: #50d0ff;
+ margin-top: 125px;
+}
+
+.tickets__list__speaker-partner__dec {
+ position: absolute;
+ top: -47%;
+ left: -7%;
+ z-index: -1;
+}
+
+.tickets__list__speaker-partner__code {
+ position: absolute;
+ left: 0;
+ bottom: 62px;
+}
+
+.tickets__list__item.speaker-partner {
+ background-color: #304d57;
+ z-index: 2;
+}
+
+.tickets__list__item.speaker {
+ background-color: #ff6d3a;
+ background-image: url('../assets/decoration-8.svg');
+ background-repeat: no-repeat;
+ background-position: 10% 100%;
+ background-size: cover;
+ transition: 200ms;
+}
+
+.tickets__list__item.speaker:hover {
+ transition: 200ms;
+ background-color: #ca4f24;
+}
+
+.tickets__list__item.speaker:active {
+ transition: 200ms;
+ background-color: #fb8c65;
+}
+
+.tickets__list__item__text__p1.speaker {
+ color: #232323;
+}
+
+.tickets__list__item.speaker h3 {
+ color: #373e41;
+}
+
+.tickets__list__item__text__p1.speaker span {
+ color: #232323;
+}
+
+.tickets__list__item__text.speaker a {
+ color: #ffffff;
+ margin-top: 125px;
+}
+
+.tickets__list__speaker__code {
+ position: absolute;
+ top: 0;
+ right: 20px;
+}
+
+.tickets__list__item.viewer {
+ background-color: #dddddd;
+ background-image: url('../assets/decoration-9.svg');
+ background-repeat: no-repeat;
+ background-position: 10% 100%;
+ background-size: cover;
+ grid-template-columns: 80% 32%;
+}
+
+.tickets__list__item.viewer:hover {
+ transition: 200ms;
+ background-color: #c4c4c4;
+}
+
+.tickets__list__item.viewer:active {
+ transition: 200ms;
+ background-color: #fbfbfb;
+}
+
+.tickets__list__item__text__p1.viewer {
+ color: #232323;
+}
+
+.tickets__list__item.viewer h3 {
+ color: #373e41;
+}
+
+.tickets__list__item__text__p1.viewer span {
+ color: #232323;
+}
+
+.tickets__list__item__text.viewer a {
+ color: #1b799b;
+ margin-top: 95px;
+}
+
+.tickets__list__viewer__code {
+ position: absolute;
+ bottom: 0;
+ left: 20px;
+}
+
+.tickets__card__head {
+ margin: 0px 0px 53px 100px;
+ width: 100%;
+}
+
+.tickets__card__head h2 {
+ background: linear-gradient(90deg, #50d0ff 0%, #1b799b 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ font-family: Coolvetica;
+ font-size: 110px;
+ font-weight: 400;
+ line-height: 92px;
+ letter-spacing: -0.02em;
+}
+
+.tickets__card__head h3 {
+ color: #fefefe;
+ font-family: Coolvetica;
+ font-size: 110px;
+ font-weight: 400;
+ line-height: 92px;
+ letter-spacing: -0.02em;
+ margin: 0px 0px 71px 7%;
+}
+
+.tickets__card__head__p2 {
+ font-family: Graphik;
+ font-size: 32px;
+ font-weight: 700;
+ line-height: 32px;
+ letter-spacing: -0.06em;
+ text-align: left;
+ color: #e4e4e4;
+ width: 40%;
+ text-indent: 20%;
+}
+
+.tickets__card__head__p2 span {
+ font-family: Graphik;
+ font-size: 32px;
+ font-weight: 700;
+ line-height: 32px;
+ letter-spacing: -0.06em;
+ text-align: left;
+ color: #ff6d3a;
+}
+
+.tickets__card__head__p1 {
+ font-family: Coolvetica;
+ font-size: 24px;
+ font-weight: 900;
+ line-height: 24px;
+ letter-spacing: 0.04em;
+ text-align: left;
+ color: #fff6a1;
+ margin-bottom: 18px;
+}
+
+.tickets__card__head__p1 span {
+ color: #309ec6;
+}
+
+@media screen and (max-width: 1400px) {
+ .tickets__card {
+  padding: 150px 100px;
+ }
+}
+
+@media screen and (max-width: 1400px) {
+ .tickets__card {
+  width: 100%;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ }
+ .tickets__card__head {
+  width: 80%;
+ }
+ .tickets__card__head h3 {
+  margin: 0px 0px 71px 0%;
+ }
+ .tickets__card__head h2 {
+  margin-left: 22%;
+ }
+ .tickets__card__head__p1 {
+  margin-left: 22%;
+ }
+ .tickets__card__head__p2 {
+  width: 76%;
+ }
+ .tickets__list__item {
+  padding: 50px 150px 60px 30px;
+  grid-template-columns: 50% 46%;
+ }
+ .tickets__list__item__text {
+  width: 100%;
+ }
+}
+
+@media screen and (max-width: 640px) {
+ .tickets__list__vip__dec {
+  transform: rotate(60deg);
+  left: -77px;
+  top: -16px;
+  width: 300px;
+  height: 300px;
+ }
+ .tickets__list__item {
+  overflow: hidden;
+  padding: 50px 30px 25px 30px;
+  grid-template-columns: 40% 65%;
+ }
+
+ .tickets__list__vip__code {
+  left: -14px;
+  bottom: 20px;
+  width: 100px;
+  height: 30px;
+ }
+ .tickets__list__item h3 {
+  font-size: 64px;
+  line-height: 64px;
+ }
+ .tickets__list__item a {
+  font-size: 32px;
+  margin-top: 20px;
+  text-align: center;
+ }
+ .tickets__list__item.viewer {
+  grid-template-columns: 40% 65%;
+ }
+ .tickets__card__head {
+  width: 125%;
+  margin: 0px 0px 53px 0px;
+ }
+ .tickets__card__head__p2 {
+  width: 100%;
+ }
+}
+
+@media screen and (max-width: 480px) {
+ .tickets__card {
+  padding: 150px 40px;
+ }
+ .tickets__card__head {
+  width: 100%;
+ }
+ .tickets__card__head h2 {
+  font-size: 56px;
+  line-height: 56px;
+  margin: 0;
+ }
+ .tickets__card__head h3 {
+  font-size: 64px;
+  line-height: 64px;
+  margin-bottom: 54px;
+ }
+ .tickets__card__head__p2 {
+  font-size: 20px;
+  line-height: 20px;
+ }
+ .tickets__card__head__p2 span {
+  font-size: 20px;
+  line-height: 20px;
+ }
+ .tickets__card__head__p1 {
+  margin-left: 0;
+ }
+ .tickets__list__speaker__code {
+  left: 0;
+  top: 64%;
+  transform: rotate(90deg);
+ }
+}
+
+@media screen and (max-width: 360px) {
+ .tickets__list__item {
+  grid-template-columns: 1fr;
+  grid-template-rows: 52% 40%;
+  height: 570px;
+ }
+ .tickets__list__vip__code {
+  bottom: 48%;
+ }
+ .tickets__list__vip__dec {
+  transform: rotate(60deg);
+  left: 102px;
+  top: -36px;
+  width: 300px;
+  height: 300px;
+ }
+ .tickets__list__speaker-partner__dec {
+  left: -136%;
+  bottom: 68%;
+  transform: rotate(295deg);
+ }
+ .tickets__list__item.speaker {
+  background-position: top;
+ }
+ .tickets__list__item.viewer {
+  grid-template-columns: 1fr;
+  grid-template-rows: 52% 40%;
+ }
+}

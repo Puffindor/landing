@@ -1,0 +1,325 @@
+.schedule {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+}
+
+.schedule__background {
+ position: absolute;
+ top: 17%;
+ left: 0;
+ opacity: 30%;
+}
+
+.schedule__card {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ padding: 150px 0px;
+ width: 80%;
+ background-color: #1c323a;
+ border-radius: 30px;
+}
+
+.schedule__list {
+ width: 70%;
+}
+
+.schedule__list__item {
+ display: grid;
+ grid-template-columns: 40% 45% 33%;
+ width: 100%;
+ border-bottom: 1px solid #ffffff33;
+ padding: 30px 160px 45px 100px;
+}
+
+.schedule__list__item:last-child {
+ border-bottom: none;
+}
+
+.schedule__list__item__p1 {
+ font-family: Graphik;
+ font-size: 32px;
+ font-weight: 400;
+ line-height: 32px;
+ text-align: left;
+ color: #a8a8a8;
+}
+
+.schedule__list__item__p2 {
+ font-family: Coolvetica;
+ font-size: 48px;
+ font-weight: 900;
+ line-height: 48px;
+ text-align: left;
+ color: #fefefe;
+}
+
+.schedule__list__item__p3 {
+ font-family: Graphik;
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 16px;
+ letter-spacing: -0.04em;
+ text-align: left;
+ color: #fefefe;
+}
+
+.schedule__list__item__head {
+ font-family: Coolvetica;
+ font-size: 22px;
+ font-weight: 900;
+ line-height: 20px;
+ letter-spacing: 0.04em;
+ text-align: left;
+ color: #fff6a1;
+}
+
+.schedule__list__item__header {
+ display: grid;
+ grid-template-columns: 40% 45% 33%;
+ width: 100%;
+ border-bottom: 1px solid #ffffff33;
+ padding: 30px 160px 45px 100px;
+}
+
+.schedule__head {
+ display: flex;
+ grid-gap: 20px;
+ width: 70%;
+ margin-bottom: 40px;
+}
+.schedule__head__text {
+ width: 71%;
+}
+
+.schedule__head__text__h1 {
+ font-family: Coolvetica;
+ font-size: 110px;
+ font-weight: 400;
+ line-height: 92px;
+ letter-spacing: -0.02em;
+ text-align: left;
+ background: linear-gradient(90deg, #50d0ff 0%, #1b799b 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ margin-left: 8%;
+}
+
+.schedule__head__text__h2 {
+ font-family: Coolvetica;
+ font-size: 110px;
+ font-weight: 400;
+ line-height: 40px;
+ letter-spacing: -0.02em;
+ text-align: left;
+ color: #fefefe;
+ margin-bottom: 100px;
+}
+
+.schedule__head__text__p2 {
+ font-family: Graphik;
+ font-size: 32px;
+ font-weight: 400;
+ line-height: 32px;
+ letter-spacing: -0.06em;
+ text-align: left;
+ color: #e4e4e4;
+ text-indent: 9.5%;
+}
+
+.schedule__head__text__p2 span {
+ font-family: Graphik;
+ font-size: 32px;
+ font-weight: 400;
+ line-height: 32px;
+ letter-spacing: -0.06em;
+ text-align: left;
+ color: #ff6d3a;
+}
+
+.schedule__head__text__p1 {
+ font-family: Coolvetica;
+ font-size: 22px;
+ font-weight: 900;
+ line-height: 20px;
+ letter-spacing: 0.04em;
+ color: #fff6a1;
+ margin-left: 8%;
+ margin-bottom: 15px;
+}
+
+.schedule__head__text__p1 span {
+ color: #309ec6;
+}
+
+.schedule__head__date {
+ width: 23%;
+ height: 284px;
+ margin-top: 35px;
+}
+
+.schedule__head__date p {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.schedule__head__date__p1 {
+ height: 20%;
+ background-color: #a8a8a8;
+ font-family: Coolvetica;
+ font-size: 48px;
+ font-weight: 900;
+ line-height: 48px;
+ text-align: center;
+ color: #232323;
+}
+
+.schedule__head__date__p2 {
+ font-family: Graphik;
+ font-size: 16px;
+ font-weight: 700;
+ line-height: 24px;
+ text-align: center;
+ color: #ffffff;
+ height: 20%;
+ background-color: #4e4e4e;
+}
+
+.schedule__head__date__p3 {
+ height: 60%;
+ background-color: #d4d1d1;
+ font-family: Graphik;
+ font-size: 84px;
+ font-weight: 600;
+ line-height: 84px;
+ text-align: center;
+ color: #ca4f24;
+ border-radius: 0px 0px 5px 5px;
+ background-image: url('../assets/leaves.png');
+
+ background-repeat: no-repeat;
+}
+
+.btn__container {
+ width: 70%;
+ display: flex;
+ justify-content: flex-end;
+ margin-top: 56px;
+}
+
+.btn {
+ width: 60%;
+ background-color: #ff6d3a;
+ padding: 18px 0px;
+ border-radius: 5px;
+ border: none;
+ outline: none;
+ font-family: Coolvetica;
+ font-size: 24px;
+ font-weight: 900;
+ line-height: 24px;
+ letter-spacing: 0.04em;
+ text-align: center;
+ transition: 200ms;
+}
+
+.btn:hover {
+ cursor: pointer;
+ transition: 200ms;
+ background-color: #ca4f24;
+}
+
+.btn:active {
+ transition: 200ms;
+ background-color: #fb8c65;
+}
+
+@media screen and (max-width: 1400px) {
+ .schedule__list {
+  width: 85%;
+ }
+}
+
+@media screen and (max-width: 1200px) {
+ .schedule__card {
+  width: 95%;
+ }
+}
+
+@media screen and (max-width: 1200px) {
+ .schedule__head__date {
+  width: 36%;
+ }
+}
+
+@media screen and (max-width: 640px) {
+ .schedule__list__item__header {
+  grid-template-columns: 29% 42% 33%;
+  padding: 30px 20px 45px 20px;
+ }
+ .schedule__list__item {
+  grid-template-columns: 29% 42% 33%;
+  padding: 30px 20px 45px 20px;
+ }
+ .schedule__list__item__p1 {
+  font-size: 24px;
+  line-height: 24px;
+ }
+ .schedule__list__item__p2 {
+  font-size: 32px;
+  line-height: 32px;
+ }
+ .schedule__list__item__p3 {
+  font-size: 16px;
+  line-height: 16px;
+ }
+
+ .schedule__head__text__p1 {
+  margin-left: 0;
+ }
+ .schedule__head__text__p2 {
+  font-size: 24px;
+  line-height: 24px;
+ }
+ .schedule__head__text__p2 span {
+  font-size: 24px;
+  line-height: 24px;
+ }
+ .schedule__head__text__h1 {
+  font-size: 64px;
+  line-height: 47px;
+  margin-left: 0;
+ }
+ .schedule__head__text__h2 {
+  font-size: 64px;
+  line-height: 64px;
+ }
+ .btn {
+  width: 73%;
+ }
+}
+
+@media screen and (max-width: 360px) {
+ .schedule__list {
+  width: 95%;
+ }
+ .schedule__head {
+  width: 95%;
+ }
+ .schedule__head__date {
+  width: 78%;
+ }
+ .btn__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ }
+ .btn {
+  width: 90%;
+ }
+}
