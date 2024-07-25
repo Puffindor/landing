@@ -21,7 +21,7 @@
 }
 
 .speakers__head h2 {
- font-family: Coolvetica;
+ font-family: 'Coolvetica con';
  font-size: 110px;
  font-weight: 400;
  line-height: 92px;
@@ -334,7 +334,7 @@
  }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 479px) {
  .speakers__list {
   grid-template-columns: 1fr;
   grid-gap: 41px;

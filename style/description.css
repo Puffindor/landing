@@ -41,7 +41,7 @@
 }
 
 .description__header__p1 {
- font-family: Coolvetica;
+ font-family: 'Coolvetica con';
  font-size: 110px;
  font-weight: 400;
  line-height: 92px;
@@ -52,7 +52,7 @@
 }
 
 .description__header__p2 {
- font-family: Coolvetica;
+ font-family: 'Coolvetica con';
  font-size: 48px;
  font-weight: 400;
  line-height: 48px;
@@ -61,7 +61,7 @@
  margin-left: 16%;
 }
 .description__header__p3 {
- font-family: Coolvetica;
+ font-family: 'Coolvetica con';
  font-size: 110px;
  font-weight: 400;
  line-height: 92px;
@@ -71,7 +71,7 @@
  text-transform: uppercase;
 }
 .description__header__p4 {
- font-family: Coolvetica;
+ font-family: 'Coolvetica con';
  font-size: 110px;
  font-weight: 400;
  line-height: 92px;
@@ -85,7 +85,7 @@
  text-transform: uppercase;
 }
 .description__header__p5 {
- font-family: Coolvetica;
+ font-family: 'Coolvetica con';
  font-size: 110px;
  font-weight: 400;
  line-height: 92px;
@@ -93,7 +93,7 @@
  color: #fefefe;
 }
 .description__header__p6 {
- font-family: Coolvetica;
+ font-family: 'Coolvetica con';
  font-size: 110px;
  font-weight: 400;
  line-height: 92px;
@@ -155,7 +155,9 @@
  color: #e4e4e4;
  margin-top: 26px;
  z-index: 1;
- margin-left: 55%;
+ margin-left: 65%;
+ width: 65%;
+ text-indent: 20%;
 }
 
 .description__text__p3 span {
@@ -175,6 +177,7 @@
  letter-spacing: -0.04em;
  color: #e4e4e4;
  z-index: 1;
+ text-indent: 20%;
 }
 
 .description__text__p2 span {
@@ -188,7 +191,7 @@
 }
 
 .description__text__img {
- bottom: -8%;
+ bottom: -18%;
  position: absolute;
  z-index: 0;
 }
@@ -577,7 +580,33 @@
  }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 479px) {
+ .description__header__p1 {
+  font-size: 56px;
+  line-height: 56px;
+  margin: 0;
+ }
+ .description__header__p3 {
+  font-size: 56px;
+  line-height: 56px;
+  margin: 0;
+ }
+ .description__header__p4 {
+  font-size: 56px;
+  line-height: 56px;
+  margin: 0;
+ }
+ .description__header__p5 {
+  width: 90%;
+  font-size: 56px;
+  line-height: 56px;
+  margin: 0;
+ }
+ .description__header__p6 {
+  font-size: 56px;
+  line-height: 56px;
+  margin-left: 20%;
+ }
  .stats__text__p5 {
   margin-left: 0;
  }

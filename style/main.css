@@ -3,9 +3,49 @@
  src: url('../assets/fonts/coolvetica\ compressed\ hv.otf');
 }
 @font-face {
+ font-family: 'Coolvetica con';
+ src: url('../assets/fonts/coolvetica\ condensed\ rg.otf');
+}
+@font-face {
  font-family: 'Roboto';
  src: url('Roboto-Regular.woff') format('woff');
 }
+
+.popup-out {
+ display: none;
+ justify-content: center;
+ align-items: center;
+}
+
+.popup-in__orange {
+ display: none;
+ border-radius: 5px;
+}
+.popup-in__blue {
+ display: none;
+ border-radius: 5px;
+}
+
+.popup-out.active {
+ display: flex;
+ position: fixed;
+ width: 100vw;
+ height: 100vh;
+ background-color: rgba(0, 0, 0, 0.418);
+ z-index: 999999;
+}
+
+.popup-in__orange.active {
+ display: block;
+ width: 50%;
+ background-color: #ca4f24;
+}
+.popup-in__blue.active {
+ display: block;
+ width: 50%;
+ background-color: #309ec6;
+}
+
 * {
  margin: 0;
  padding: 0;
@@ -162,6 +202,7 @@ header {
  display: flex;
  grid-gap: 140px;
  margin-top: 5%;
+ scroll-margin: 100px;
 }
 
 .event__card span {
@@ -318,7 +359,7 @@ header {
  background: linear-gradient(180deg, #309ec6 0%, #50d0ff 100%);
  -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
- font-family: Coolvetica;
+ font-family: 'Coolvetica con';
  font-size: 110px;
  font-weight: 400;
  line-height: 88px;
@@ -329,7 +370,7 @@ header {
 .russia {
  margin-left: 41%;
  color: #fefefe;
- font-family: Coolvetica;
+ font-family: 'Coolvetica con';
  font-size: 110px;
  font-weight: 400;
  line-height: 88px;
@@ -687,7 +728,7 @@ header {
  }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 479px) {
  .page__background {
   transform: scale(6);
  }

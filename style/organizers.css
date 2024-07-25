@@ -276,7 +276,7 @@
 }
 
 .organizers__head__h1 {
- font-family: Coolvetica;
+ font-family: 'Coolvetica con';
  font-size: 110px;
  font-weight: 400;
  line-height: 92px;
@@ -286,7 +286,7 @@
 }
 
 .organizers__head__h2 {
- font-family: Coolvetica;
+ font-family: 'Coolvetica con';
  font-size: 110px;
  font-weight: 400;
  line-height: 92px;
@@ -378,7 +378,7 @@
  }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 479px) {
  .organizers__text {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 42%);
@@ -410,6 +410,12 @@
  .organizers__text__founder__p1 {
   width: 100%;
   margin-bottom: 19%;
+  font-size: 20px;
+  line-height: 20px;
+ }
+ .organizers__text__founder__p1 span {
+  font-size: 20px;
+  line-height: 20px;
  }
  .partners__list {
   row-gap: 26px;

@@ -227,7 +227,7 @@
 }
 
 .specialists__head h3 {
- font-family: Coolvetica;
+ font-family: 'Coolvetica con';
  font-size: 110px;
  font-weight: 400;
  line-height: 92px;
@@ -238,7 +238,7 @@
 }
 
 .specialists__head h2 {
- font-family: Coolvetica;
+ font-family: 'Coolvetica con';
  font-size: 110px;
  font-weight: 400;
  line-height: 92px;
@@ -421,7 +421,7 @@
  }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 479px) {
  .specialists__background {
   bottom: 25%;
   transform: scale(5.5);
