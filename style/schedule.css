@@ -331,6 +331,14 @@
 }
 
 @media screen and (max-width: 479px) {
+ .schedule__head__text__h1 {
+  font-size: 46px;
+  line-height: 46px;
+ }
+ .schedule__head__text__h2 {
+  font-size: 46px;
+  line-height: 46px;
+ }
  .schedule__list {
   width: 95%;
  }
