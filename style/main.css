@@ -11,6 +11,30 @@
  src: url('Roboto-Regular.woff') format('woff');
 }
 
+.popup__head {
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ padding: 15px 30px;
+}
+
+.popup__head.orange h3 {
+ color: #232323;
+}
+
+.popup__head__container {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+}
+.popup__head h3 {
+ display: inline;
+ font-size: 30px;
+ font-weight: 800;
+ font-family: 'Roboto', sans-serif;
+ color: white;
+}
+
 .popup-out {
  display: none;
  justify-content: center;
@@ -89,7 +113,9 @@ header {
  width: 10px;
  height: 10px;
 }
-
+.cross {
+ cursor: pointer;
+}
 .nav {
  display: flex;
  align-items: center;
@@ -780,5 +806,8 @@ header {
  .h2::before {
   top: 5%;
   left: 24%;
+ }
+ .img-label {
+  text-align: center;
  }
 }

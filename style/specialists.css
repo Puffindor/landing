@@ -426,4 +426,20 @@
   bottom: 25%;
   transform: scale(5.5);
  }
+ .specialists__head__p2 {
+  font-size: 20px;
+  line-height: 20px;
+ }
+ .specialists__head__p3 {
+  width: 50%;
+ }
+ .specialists__head h2 {
+  margin-left: 15%;
+ }
+ .specialists__head__p4 {
+  left: 5%;
+ }
+ .specialists__head__p2 {
+  width: 89%;
+ }
 }

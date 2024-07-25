@@ -197,4 +197,17 @@
  .reviews__background__container {
   right: -140%;
  }
+ .reviews__list h3 {
+  font-size: 28px;
+  line-height: 28px;
+  margin-bottom: 5px;
+ }
+ .reviews__head__p1 {
+  font-size: 20px;
+  line-height: 20px;
+ }
+ .reviews__head__p1 span {
+  font-size: 20px;
+  line-height: 20px;
+ }
 }

@@ -356,4 +356,17 @@
  .btn {
   width: 90%;
  }
+ .schedule__head__text__p2 {
+  font-size: 20px;
+  line-height: 20px;
+  text-indent: 30%;
+ }
+ .schedule__head__text__p2 span {
+  font-size: 20px;
+  line-height: 20px;
+ }
+ .schedule__list__item__p1 {
+  font-size: 20px;
+  line-height: 20px;
+ }
 }

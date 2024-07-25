@@ -424,4 +424,12 @@
  .partners__list li img {
   width: 140px;
  }
+ .organizers__text__founder__h1 {
+  font-size: 28px;
+  line-height: 28px;
+  margin-bottom: 36px;
+ }
+ .partners h2 {
+  font-size: 40px;
+ }
 }

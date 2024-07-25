@@ -351,4 +351,12 @@
   width: 100%;
   border-radius: 5px;
  }
+ .speakers__head__p2 {
+  font-size: 24px;
+  line-height: 24px;
+ }
+ .speakers__head__p2 span {
+  font-size: 24px;
+  line-height: 24px;
+ }
 }

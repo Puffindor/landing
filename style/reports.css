@@ -199,6 +199,13 @@
 }
 
 @media screen and (max-width: 479px) {
+ .reports__card__body__p1 {
+  width: 90%;
+ }
+ .reports__card__body h3 {
+  font-size: 28px;
+  line-height: 28px;
+ }
  .reports__card__head h3 {
   font-size: 56px;
   line-height: 56px;
@@ -209,12 +216,12 @@
   margin-left: 31%;
  }
  .reports__card__head__p2 {
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 20px;
  }
  .reports__card__head__p2 span {
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 20px;
  }
  .reports__card__head__p1 {
   top: 12%;
