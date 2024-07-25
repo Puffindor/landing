@@ -29,7 +29,7 @@
 
 .specialists__list__item__title {
  width: 100%;
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 32px;
  font-weight: 600;
  line-height: 32px;
@@ -45,7 +45,7 @@
 }
 .specialists__list__item__text__p1 {
  width: 16%;
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 700;
  line-height: 20px;
@@ -67,10 +67,11 @@
 
 .specialists__list__item__text a {
  display: block;
+ width: fit-content;
 }
 
 .specialists__list__item__text__phone {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 700;
  line-height: 20px;
@@ -80,7 +81,7 @@
 }
 
 .specialists__list__item__text__site {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 700;
  line-height: 20px;
@@ -92,7 +93,7 @@
 }
 
 .specialists__list__item__text__email {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 400;
  line-height: 20px;
@@ -102,7 +103,7 @@
 }
 
 .specialists__list__item__text__vk {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 400;
  line-height: 20px;
@@ -113,7 +114,7 @@
 }
 
 .specialists__list__item__text__wa {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 400;
  line-height: 20px;
@@ -123,7 +124,7 @@
 }
 
 .specialists__list__item__text__youtube {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 400;
  line-height: 20px;
@@ -136,7 +137,7 @@
 
 .specialists__list__item__text__p2 {
  width: 150px;
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 400;
  line-height: 20px;
@@ -165,7 +166,7 @@
 
 .specialists__list__item__text__p3 {
  width: 100%;
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 400;
  line-height: 20px;
@@ -188,7 +189,7 @@
 }
 
 .specialists__list__item__text__site.l2 {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 400;
  line-height: 20px;
@@ -251,7 +252,7 @@
 }
 
 .specialists__head__p2 {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 32px;
  font-weight: 400;
  line-height: 32px;
@@ -264,7 +265,7 @@
 }
 
 .specialists__head__p2 span {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 32px;
  font-weight: 700;
  line-height: 32px;
@@ -274,7 +275,7 @@
 }
 
 .specialists__head__p3 {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 400;
  line-height: 20px;
@@ -287,7 +288,7 @@
 }
 
 .specialists__head__p3 span {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 700;
  line-height: 20px;
@@ -322,12 +323,16 @@
  }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
+ .specialists__head__p2 {
+  margin-left: 50px;
+ }
  .specialists__list {
   width: 100%;
  }
  .specialists__background {
-  transform: scale(1.8);
+  transform: scale(1.9);
+  bottom: 24%;
  }
 }
 
@@ -359,8 +364,8 @@
   padding: 0;
  }
  .specialists__background {
-  bottom: 2%;
-  transform: scale(2.5);
+  bottom: 24%;
+  transform: scale(3.6);
  }
  .specialists__head__p1 {
   font-size: 20px;
@@ -368,8 +373,14 @@
   margin: 0px 0px 10px 10%;
  }
  .specialists__head__p2 {
+  font-size: 24px;
+  line-height: 24px;
   width: 72%;
   margin-left: 101px;
+ }
+ .specialists__head__p2 span {
+  font-size: 24px;
+  line-height: 24px;
  }
  .specialists__head__p3 {
   width: 38%;
@@ -392,6 +403,9 @@
  }
 }
 @media screen and (max-width: 480px) {
+ .specialists__head__p2 {
+  margin-left: 50px;
+ }
  .specialists__list__item__text__p1 {
   width: 85%;
  }
@@ -402,7 +416,14 @@
   top: 0%;
  }
  .specialists__background {
-  bottom: 3%;
-  transform: scale(3);
+  bottom: 27%;
+  transform: scale(3.5);
+ }
+}
+
+@media screen and (max-width: 360px) {
+ .specialists__background {
+  bottom: 25%;
+  transform: scale(5.5);
  }
 }

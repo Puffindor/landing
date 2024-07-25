@@ -1,13 +1,10 @@
 @font-face {
  font-family: 'Coolvetica';
- src: url(../assets/fonts/coolvetica.ttf);
+ src: url('../assets/fonts/coolvetica\ compressed\ hv.otf');
 }
 @font-face {
- font-family: 'Graphik';
- src: url('../assets/fonts/Graphik-Medium.woff');
- src: local('Graphik Regular'), local('../assets/fonts/Graphik-Medium.woff'),
-  url('Graphik-Regular.eot?#iefix') format('embedded-opentype'),
-  url('../assets/fonts/Graphik-Medium.woff') format('woff');
+ font-family: 'Roboto';
+ src: url('Roboto-Regular.woff') format('woff');
 }
 * {
  margin: 0;
@@ -22,6 +19,40 @@ header {
  margin-bottom: 40px;
  position: fixed;
  z-index: 99999;
+}
+
+.nav.star {
+ padding: 5px 13px;
+ border-radius: 5px;
+ box-shadow: -4px 4px 16px 4px #ace9ff40;
+ box-shadow: 4px 4px 16px 4px #ace9ff40;
+ position: relative;
+}
+.star-icon {
+ position: absolute;
+}
+.star-icon.s1 {
+ top: 55%;
+ left: -12%;
+ width: 27px;
+ height: 27px;
+}
+.star-icon.s2 {
+ top: 35%;
+ left: 88%;
+ width: 17px;
+ height: 17px;
+}
+.star-icon.s3 {
+ top: -12%;
+ left: 57%;
+ width: 10px;
+ height: 10px;
+}
+
+.nav {
+ display: flex;
+ align-items: center;
 }
 
 .header-nav {
@@ -95,7 +126,7 @@ header {
 }
 .img-label {
  text-transform: uppercase;
- font-family: 'Graphik';
+ font-family: 'Roboto', sans-serif;
  font-size: 8px;
  font-weight: 600;
  line-height: 8px;
@@ -120,7 +151,7 @@ header {
 
 .black {
  font-family: Coolvetica;
- font-size: 48px !important;
+ font-size: 48px;
  font-weight: 900;
  line-height: 40px;
  letter-spacing: 0.01em;
@@ -211,7 +242,7 @@ header {
  padding: 28px 50px 32px 30px;
 }
 .event__description__ticket p {
- font-family: 'Graphik';
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 400;
  line-height: 20px;
@@ -353,7 +384,7 @@ header {
 }
 
 .header-nav-mobile li {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 24px;
  font-weight: 500;
  line-height: 24px;
@@ -367,7 +398,7 @@ header {
 }
 
 .mobile-nav__p1 {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 12px;
  font-weight: 700;
  line-height: 16px;
@@ -378,7 +409,7 @@ header {
 }
 
 .mobile-nav__bottom a {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 12px;
  font-weight: 400;
  line-height: 16px;
@@ -388,7 +419,7 @@ header {
 }
 
 .mobile-nav__p2 {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 12px;
  font-weight: 400;
  line-height: 16px;
@@ -407,7 +438,7 @@ header {
 }
 
 .mobile-nav__p5 {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 12px;
  font-weight: 400;
  line-height: 16px;
@@ -511,6 +542,7 @@ header {
   justify-content: space-between;
   width: 100%;
   border-radius: 5px;
+  margin: 10px;
  }
  .event {
   grid-gap: 20px;
@@ -574,6 +606,9 @@ header {
  .event__description__btn {
   padding: 15px;
  }
+ .event {
+  margin-top: 50px;
+ }
 }
 
 @media screen and (max-width: 480px) {
@@ -607,8 +642,23 @@ header {
 }
 
 @media screen and (max-width: 480px) {
+ .ticket {
+  margin: 10px;
+ }
+ .ticket .icon-container {
+  margin: 0;
+ }
+ .event__card div {
+  margin-bottom: 10px;
+ }
+ .event__card__date__num {
+  top: 10px;
+ }
+ .event__card .black {
+  font-size: 32px;
+ }
  .event {
-  margin-top: 160px;
+  margin-top: 180px;
  }
  .mobile-nav__in {
   width: 270px;
@@ -638,6 +688,13 @@ header {
 }
 
 @media screen and (max-width: 360px) {
+ .page__background {
+  transform: scale(6);
+ }
+ .ticket__text_white {
+  text-align: center;
+  width: 80%;
+ }
  .event__description__header {
   position: static;
  }
@@ -672,7 +729,14 @@ header {
   left: 0;
  }
  .event__description__location {
-  top: 47%;
+  top: 44%;
   left: 53%;
+ }
+ .h2 {
+  justify-content: center;
+ }
+ .h2::before {
+  top: 5%;
+  left: 24%;
  }
 }

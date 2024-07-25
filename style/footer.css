@@ -22,7 +22,7 @@ footer {
 
 .logo {
  margin-bottom: 27px;
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 12px;
  font-weight: 700;
  line-height: 12px;
@@ -51,7 +51,7 @@ footer .left h2 {
 }
 
 .left__p1 {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 32px;
  font-weight: 500;
  line-height: 32px;
@@ -63,7 +63,7 @@ footer .left h2 {
 }
 
 .left__p2 {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 500;
  line-height: 20px;
@@ -75,7 +75,7 @@ footer .left h2 {
 
 .left__p3 {
  margin-bottom: 13px;
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 700;
  line-height: 20px;
@@ -98,7 +98,7 @@ footer h4 {
 
 .left__p4 {
  color: #e4e4e4;
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 400;
  line-height: 20px;
@@ -110,7 +110,7 @@ footer h4 {
 footer a {
  display: block;
  color: #e4e4e4;
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 400;
  line-height: 20px;
@@ -122,7 +122,7 @@ footer a {
 }
 
 .right__scroll {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 700;
  line-height: 20px;
@@ -137,7 +137,7 @@ footer a {
 }
 
 .right__tickets {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 700;
  line-height: 20px;
@@ -152,7 +152,7 @@ footer a {
  margin-bottom: 10px;
  text-decoration: none;
  color: #fb8c65;
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 700;
  line-height: 20px;
@@ -163,7 +163,7 @@ footer a {
 
 .right_p1 {
  color: #fefefe;
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 700;
  line-height: 20px;
@@ -174,7 +174,7 @@ footer a {
 
 .right__p2 {
  margin-bottom: 20px;
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 400;
  line-height: 20px;
@@ -186,7 +186,7 @@ footer a {
 .right__p3 {
  margin-top: 90px;
  text-decoration: underline;
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 400;
  line-height: 20px;

@@ -51,7 +51,7 @@
 }
 .speakers__head__p2 {
  width: 40%;
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 32px;
  font-weight: 400;
  line-height: 32px;
@@ -62,7 +62,7 @@
 
 .speakers__head__p2 span {
  color: #ff6d3a;
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 32px;
  font-weight: 700;
  line-height: 32px;
@@ -89,7 +89,7 @@
 }
 
 .speakers__list__item__description {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 400;
  line-height: 16px;
@@ -99,7 +99,7 @@
 }
 
 .speakers__list__item__company {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 400;
  line-height: 16px;
@@ -138,7 +138,7 @@
 .hidden__description {
  margin-top: 10px;
  color: #fefefe;
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 400;
  line-height: 20px;
@@ -231,17 +231,20 @@
  position: absolute;
  right: 0%;
  top: -12%;
+ z-index: 0;
 }
 .speakers__ray-2 {
  right: 0%;
  position: absolute;
  top: -12%;
+ z-index: 0;
 }
 
 .speakers__ray-3 {
  position: absolute;
  left: -2%;
  top: -12%;
+ z-index: 0;
 }
 .speakers__ray-4 {
  position: absolute;
@@ -278,6 +281,9 @@
 }
 
 @media screen and (max-width: 640px) {
+ .ray {
+  display: none;
+ }
  .speakers__list {
   grid-template-columns: 1fr 1fr;
   margin-bottom: 51px;
@@ -301,6 +307,30 @@
  }
  .speakers__head__p2 {
   width: 70%;
+ }
+}
+
+@media screen and (max-width: 480px) {
+ .speakers__list__item__img-container {
+  width: 210px;
+  height: 210px;
+ }
+ .speakers__list__item__img {
+  width: 210px;
+  height: 210px;
+ }
+ .speakers__list__item {
+  width: 210px;
+ }
+ .speakers__list__item__name {
+  font-size: 28px;
+  line-height: 28px;
+ }
+ .speakers__list__item__description {
+  font-size: 16px;
+ }
+ .speakers__animated {
+  bottom: -37%;
  }
 }
 

@@ -41,7 +41,7 @@
 }
 
 .schedule__list__item__p1 {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 32px;
  font-weight: 400;
  line-height: 32px;
@@ -59,7 +59,7 @@
 }
 
 .schedule__list__item__p3 {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 400;
  line-height: 16px;
@@ -76,6 +76,7 @@
  letter-spacing: 0.04em;
  text-align: left;
  color: #fff6a1;
+ text-transform: uppercase;
 }
 
 .schedule__list__item__header {
@@ -121,7 +122,7 @@
 }
 
 .schedule__head__text__p2 {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 32px;
  font-weight: 400;
  line-height: 32px;
@@ -132,9 +133,9 @@
 }
 
 .schedule__head__text__p2 span {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 32px;
- font-weight: 400;
+ font-weight: 700;
  line-height: 32px;
  letter-spacing: -0.06em;
  text-align: left;
@@ -180,7 +181,7 @@
 }
 
 .schedule__head__date__p2 {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 700;
  line-height: 24px;
@@ -193,7 +194,7 @@
 .schedule__head__date__p3 {
  height: 60%;
  background-color: #d4d1d1;
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 84px;
  font-weight: 600;
  line-height: 84px;
@@ -258,12 +259,16 @@
 }
 
 @media screen and (max-width: 640px) {
+ .schedule__background {
+  top: 19%;
+  left: -46%;
+ }
  .schedule__list__item__header {
   grid-template-columns: 29% 42% 33%;
   padding: 30px 20px 45px 20px;
  }
  .schedule__list__item {
-  grid-template-columns: 29% 42% 33%;
+  grid-template-columns: 26% 40% 33%;
   padding: 30px 20px 45px 20px;
  }
  .schedule__list__item__p1 {
@@ -271,8 +276,8 @@
   line-height: 24px;
  }
  .schedule__list__item__p2 {
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 28px;
+  line-height: 28px;
  }
  .schedule__list__item__p3 {
   font-size: 16px;
@@ -299,8 +304,21 @@
   font-size: 64px;
   line-height: 64px;
  }
+ .btn__container {
+  position: relative;
+  z-index: 9999;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
  .btn {
-  width: 73%;
+  width: 90%;
+ }
+}
+@media screen and (max-width: 480px) {
+ .schedule__list__item__head {
+  font-size: 20px;
  }
 }
 

@@ -2,8 +2,42 @@
  position: relative;
 }
 
+.description__text {
+ position: relative;
+}
+
 .description__header {
  margin-left: 26%;
+}
+.description__header__p7 {
+ top: 10%;
+ left: 2%;
+ position: absolute;
+ font-family: Coolvetica;
+ font-size: 24px;
+ font-weight: 900;
+ line-height: 24px;
+ letter-spacing: 0.04em;
+ color: #fff6a1;
+}
+
+.description__header__p7 span {
+ color: #309ec6;
+}
+
+.stats__text__p5 {
+ margin-left: 27%;
+ margin-bottom: 35px;
+ font-family: Coolvetica;
+ font-size: 24px;
+ font-weight: 900;
+ line-height: 24px;
+ letter-spacing: 0.04em;
+ color: #fff6a1;
+ text-transform: uppercase;
+}
+.stats__text__p5 span {
+ color: #309ec6;
 }
 
 .description__header__p1 {
@@ -96,7 +130,7 @@
 
 .description__text__p1 {
  position: relative;
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 32px;
  font-weight: 400;
  line-height: 32px;
@@ -113,7 +147,7 @@
 .description__text__p3 {
  margin-left: 250px;
  position: relative;
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 32px;
  font-weight: 400;
  line-height: 32px;
@@ -127,13 +161,14 @@
 .description__text__p3 span {
  color: #ff6d3a;
  z-index: 1;
+ font-weight: 700;
 }
 
 .description__text__p2 {
  width: 53%;
  position: relative;
  margin-left: 70px;
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 500;
  line-height: 20px;
@@ -143,7 +178,7 @@
 }
 
 .description__text__p2 span {
- font-family: Graphik;
+ font-family: 'Roboto', sans-serif;
  font-size: 16px;
  font-weight: 700;
  line-height: 20px;
@@ -164,8 +199,9 @@
  border-radius: 8px;
  border: 1px solid #ffffff33;
  backdrop-filter: blur(5px);
- padding: 200px 0px 128px 0px;
+ padding: 150px 0px 128px 0px;
  background-color: #5b5b5b33;
+ z-index: 10;
 }
 
 .stats__container {
@@ -213,7 +249,8 @@
  flex-direction: column;
 }
 .stats__text__p4 {
- height: 100%;
+ height: 71%;
+ width: 110%;
  grid-gap: 20px;
  display: flex;
  align-items: flex-end;
@@ -247,6 +284,7 @@
 }
 
 .stats__youtube-link {
+ cursor: pointer;
  position: absolute;
  background-color: #fefefe;
  border-radius: 10px;
@@ -254,12 +292,14 @@
  display: flex;
  justify-content: center;
  align-items: center;
- bottom: -2%;
+ bottom: -1%;
  left: 0;
  right: 0;
  margin-left: auto;
  margin-right: auto;
  width: 60%;
+ text-decoration: none;
+ z-index: 20;
 }
 
 .stats__youtube-link p {
@@ -287,8 +327,8 @@
 @media screen and (max-width: 1400px) {
  .description {
   width: 100%;
-  overflow-x: hidden;
-  overflow-y: visible;
+  /* overflow-x: hidden;
+  overflow-y: visible; */
  }
 
  .description__header {
@@ -341,6 +381,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+ .stats__text__p5 {
+  margin-left: 50px;
+ }
  .description__text {
   margin-left: 5%;
  }
@@ -373,6 +416,24 @@
 }
 
 @media screen and (max-width: 640px) {
+ .stats__text__p5 {
+  margin-left: 70px;
+ }
+ .stats__text__p4 {
+  height: 53%;
+ }
+ .description__dec-2 {
+  top: -3%;
+  left: -127%;
+ }
+ .description__header__p7 {
+  top: 6%;
+  left: 10%;
+ }
+ .description__dec-1 {
+  left: -129%;
+  top: -9%;
+ }
  .description__header__p1 {
   font-size: 64px;
   line-height: 64px;
@@ -414,6 +475,7 @@
  .description__text__img {
   width: 460px;
   height: 300px;
+  border-radius: 5px;
  }
  .description__text__p3 {
   margin-top: 114%;
@@ -439,8 +501,6 @@
   line-height: 32px;
   grid-gap: 15px;
   margin-left: 70px;
- }
- .stats {
  }
  .link {
   margin-top: 66px;
@@ -470,6 +530,16 @@
 }
 
 @media screen and (max-width: 480px) {
+ .stats__text__p5 {
+  margin-left: 56px;
+ }
+ .description__dec-1 {
+  left: -129%;
+  top: -12%;
+ }
+ .description__header {
+  margin-left: 1%;
+ }
  .description__text__img {
   bottom: 27%;
   left: -5%;
@@ -508,6 +578,13 @@
 }
 
 @media screen and (max-width: 360px) {
+ .stats__text__p5 {
+  margin-left: 0;
+ }
+ .description__text__p3 {
+  margin: 77% 0px 0px 0px;
+  width: 100%;
+ }
  .stats__text {
   grid-template-columns: 1fr;
   margin: 0;
@@ -538,7 +615,9 @@
   margin-left: 0;
   padding: 5px;
  }
-
+ .stats__text__p4 {
+  height: 100%;
+ }
  .description__text__p1 {
   width: 100%;
   line-height: 24px;
@@ -547,6 +626,16 @@
   width: 100%;
  }
  .description__text__img {
-  bottom: 42%;
+  width: 300px;
+  height: 191px;
+  bottom: 32%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+ }
+
+ .description__header__p7 {
+  top: -5%;
+  left: 36%;
  }
 }
